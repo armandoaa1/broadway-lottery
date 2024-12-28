@@ -4,7 +4,7 @@ on:
     # Run every day at 14:23 UTC
    - cron: "12 12 * * *"
    - cron: "16 16 * * *"
-   - cron: "24 13 * * *"
+   - cron: "23 13 * * *"
 jobs:
   test:
     timeout-minutes: 60
