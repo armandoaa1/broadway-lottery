@@ -13,7 +13,6 @@ chromium.use(stealth);
 
 const urls = [
   "https://lottery.broadwaydirect.com/show/dbh-nyc/",
-  "https://lottery.broadwaydirect.com/show/tammy-faye-ny/",
   "https://lottery.broadwaydirect.com/show/aladdin/",
   "https://lottery.broadwaydirect.com/show/mj-ny/",
   "https://lottery.broadwaydirect.com/show/six-ny/",
