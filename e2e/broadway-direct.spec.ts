@@ -18,7 +18,7 @@ const urls = [
 urls.forEach((url) => {
   test(`Sign up at ${url}`, async () => {
     const userInfo = getUserInfo(process.env);
-    const browser = await firefox.launch({ headless: false });
+    const browser = await chromium.launch({ headless: false });
     await broadwayDirect({ browser, userInfo, url });
   });
 });
