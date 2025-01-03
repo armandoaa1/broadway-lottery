@@ -12,7 +12,7 @@ const stealth = stealthPlugin();
 chromium.use(stealth);
 
 const urls = [
-  "https://lottery.broadwaydirect.com/show/six-ny/",
+  "https://lottery.broadwaydirect.com/show/wicked/",
 ];
 
 urls.forEach((url) => {
