@@ -1,5 +1,7 @@
 import { test } from "@playwright/test";
 import { chromium } from "playwright-extra";
+//added
+import { firefox } from "playwright-extra";
 import stealthPlugin from "puppeteer-extra-plugin-stealth";
 import { getUserInfo } from "../src/get-user-info";
 import { broadwayDirect } from "../src/broadway-direct";
@@ -10,6 +12,8 @@ const stealth = stealthPlugin();
 
 // Add the plugin to Playwright (any number of plugins can be added)
 chromium.use(stealth);
+//added
+firefox.use(stealth);
 
 const urls = [
   "https://lottery.broadwaydirect.com/show/wicked/",
@@ -19,7 +23,8 @@ const urls = [
 urls.forEach((url) => {
   test(`Sign up at ${url}`, async () => {
     const userInfo = getUserInfo(process.env);
-    const browser = await chromium.launch({ headless: false });
+    //below changed from chromium.launch to firefox.launch
+    const browser = await firefox.launch({ headless: false });
     await broadwayDirect({ browser, userInfo, url });
   });
 });
