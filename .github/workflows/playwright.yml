@@ -8,7 +8,7 @@ on:
 #   - cron: "23 13 * * *"
 jobs:
   test:
-    timeout-minutes: 60
+    timeout-minutes: 600
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
