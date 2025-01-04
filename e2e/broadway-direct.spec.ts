@@ -1,5 +1,5 @@
 import { test } from "@playwright/test";
-import { chromium } from "playwright-extra";
+//import { chromium } from "playwright-extra";
 //added
 import { firefox } from "playwright-extra";
 import stealthPlugin from "puppeteer-extra-plugin-stealth";
@@ -11,13 +11,17 @@ import { broadwayDirect } from "../src/broadway-direct";
 const stealth = stealthPlugin();
 
 // Add the plugin to Playwright (any number of plugins can be added)
-chromium.use(stealth);
+//chromium.use(stealth);
 //added
 firefox.use(stealth);
 
 const urls = [
   "https://lottery.broadwaydirect.com/show/wicked/",
   "https://lottery.broadwaydirect.com/show/six-ny/",
+  "https://lottery.broadwaydirect.com/show/dbh-nyc/",
+  "https://lottery.broadwaydirect.com/show/elf-ny/",
+  "https://lottery.broadwaydirect.com/show/mj-ny/",
+
 ];
 
 urls.forEach((url) => {
