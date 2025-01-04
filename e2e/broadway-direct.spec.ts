@@ -13,6 +13,7 @@ chromium.use(stealth);
 
 const urls = [
   "https://lottery.broadwaydirect.com/show/wicked/",
+  "https://lottery.broadwaydirect.com/show/six-ny/",
 ];
 
 urls.forEach((url) => {
