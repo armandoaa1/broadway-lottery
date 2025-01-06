@@ -1,6 +1,6 @@
 name: Playwright Tests
 on:
- #workflow_dispatch:
+ workflow_dispatch:
   schedule:
      Run every day at 14:23 UTC
    - cron: "12 12 * * *"
